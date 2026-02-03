@@ -1,0 +1,159 @@
+/* ===============================
+   Global Styles
+================================ */
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* ===============================
+   Navbar Customization
+================================ */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0d6efd !important;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: #0d6efd !important;
+}
+
+/* ===============================
+   Container & Jumbotron
+================================ */
+.container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.jumbotron {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.jumbotron p.lead {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* ===============================
+   Table Styling
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+    color: #ffffff;
+}
+
+thead th {
+    padding: 14px;
+    text-align: left;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tbody td {
+    padding: 14px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #eaeaea;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: #f1f6ff;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===============================
+   Buttons
+================================ */
+.btn {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-dangar {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn-dangar:hover {
+    background-color: #bb2d3b;
+    color: #fff;
+}
+
+.btn-outline-success {
+    margin-left: 6px;
+}
+
+/* ===============================
+   Responsive Improvements
+================================ */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 25px;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table, tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        padding: 10px;
+    }
+
+    tbody td {
+        border: none;
+        padding: 8px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #0d6efd;
+    }
+}
